@@ -338,7 +338,9 @@
                     let opacity = 1;
                     for (
                         let testElem = elem;
-                        opacity >= OPACITY_LIMIT && testElem && testElem.nodeType === Node.ELEMENT_NODE;
+                        opacity >= OPACITY_LIMIT &&
+                        testElem &&
+                        testElem.nodeType === Node.ELEMENT_NODE;
                         testElem = testElem.parentNode
                     ) {
                         let style = window.getComputedStyle(testElem);
